@@ -42,7 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opendelta.device=otus \
+    ro.opendelta.device=rock \
     persist.sys.logkit.ctrlcode=0 \
     ro.vendor.extension_library=/vendor/lib/libqc-opt.so \
     ro.usb.mtp=0x2e82 \
@@ -72,8 +72,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Prima(pronto firmware)
 PRODUCT_COPY_FILES += \
-    kernel/motorola/otus/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    kernel/motorola/otus/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
+    kernel/nokia/rock/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    kernel/nokia/rock/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
 # Inherit from msm8610-common
-$(call inherit-product, device/motorola/msm8610-common/msm8610.mk)
+$(call inherit-product, device/nokia/msm8610-common/msm8610.mk)
