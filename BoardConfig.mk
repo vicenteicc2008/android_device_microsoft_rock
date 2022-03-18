@@ -14,15 +14,15 @@
 # limitations under the License.
 #
 
--include vendor/motorola/otus/BoardConfigVendor.mk
+-include vendor/nokia/rock/BoardConfigVendor.mk
 
 # inherit from common msm8610-common
--include device/motorola/msm8610-common/BoardConfigCommon.mk
+-include device/nokia/msm8610-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := device/nokia/rock
 
-TARGET_KERNEL_SOURCE := kernel/motorola/otus
-TARGET_KERNEL_CONFIG := cm_otus_defconfig
+TARGET_KERNEL_SOURCE := kernel/nokia/rock
+TARGET_KERNEL_CONFIG := msm8212_defconfig
 
 # Storage & partiiton
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
@@ -42,4 +42,4 @@ TARGET_OTA_ASSERT_DEVICE := xt1505,xt1506,otus_umts,otus_umtsds,otus,otus_ds
 TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_otus.cpp
 
 BOARD_SEPOLICY_DIRS += \
-    device/motorola/otus/sepolicy
+    device/nokia/rock/sepolicy
