@@ -1,1 +1,1 @@
-add_lunch_combo cm_otus-userdebug
+add_lunch_combo cm_rock-userdebug
