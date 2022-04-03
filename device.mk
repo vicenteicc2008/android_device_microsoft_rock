@@ -19,7 +19,7 @@
 #
 # Everything in this directory will become public
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := device/nokia/rock
 
 # Ramdisk
  PRODUCT_COPY_FILES += \
